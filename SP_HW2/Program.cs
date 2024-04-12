@@ -31,7 +31,7 @@ partial class Program
                     Console.WriteLine("Створюємо випадковий масив на 10 элементів ");
                     for (int i = 0; i < Arr.Length; i++)
                     {
-                        Arr[i] = rnd.Next(0, 25);
+                        Arr[i] = rnd.Next(0, 35);
                     }
                 PrintArray("Початковий масив : ", Arr);
                 Program.Arr = Arr;    
@@ -56,7 +56,7 @@ partial class Program
         {
             lock(locker)
             {
-                Console.WriteLine("Введіть число, яке потрібно знайти:");
+                Console.Write("Введіть число, яке потрібно знайти: ");
                 int searchValue = int.Parse(Console.ReadLine());
                 int index = Array.BinarySearch(Arr, searchValue);
 
