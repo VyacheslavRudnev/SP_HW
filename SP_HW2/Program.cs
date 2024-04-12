@@ -52,7 +52,7 @@ partial class Program
             }
         }
 
-        static void BinarySearch(object searchValueObj)
+        static void BinarySearch()
         {
             lock(locker)
             {
